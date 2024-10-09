@@ -1,0 +1,21 @@
+body {
+    background: black;
+}
+
+.title {
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sections {
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav1 {
+    background-color: purple;
+}
