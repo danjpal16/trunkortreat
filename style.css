@@ -28,7 +28,29 @@ body {
     box-shadow: 0 0 30px #B19CD9;
 }
 
-h1 {
+.trunk-card {
+    border-radius: 20px;
+    border-color: white;
+    border-width: medium;
+    box-shadow: #F7941E;
+    box-shadow: 0 0 30px #F7941E;
+}
+
+.section1 {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #B19CD9;
+}
+
+.section-2 {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #F7941E;
+}
+
+.section3 {
     font-family: "Creepster", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -38,3 +60,323 @@ h1 {
 .title-text {
     font-weight: 700;
 }
+
+.moreinfo-btn {
+    background-color: #B19CD9;
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.moreinfo-header {
+    border-radius: 20px;
+    border-color: white;
+    border-width: medium;
+    box-shadow: #B19CD9;
+    box-shadow: 0 0 30px #B19CD9;
+}
+
+.moreinfo-text {
+    font-weight: 700;
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+#spooky {
+    margin: 10% auto;
+    width: 80%;
+    height: 80%;
+    animation: floaty 2s infinite;
+}
+
+#spooky #body {
+    position: relative;
+    margin: 50px auto 0;
+    width: 180px;
+    height: 220px;
+    background: #ffffff;
+    box-shadow: 0 0px 20px white;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+}
+
+#spooky #body:before,
+#spooky #body:after {
+    content: '';
+    position: absolute;
+    top: 130px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0px 20px white;
+    animation: floaty .2s infinite;
+}
+
+#spooky #body:before {
+    left: -18px;
+}
+
+#spooky #body:after {
+    right: -18px;
+}
+
+#spooky #body #eyes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 90px 0 0;
+    width: 90px;
+    height: 20px;
+}
+
+#spooky #body #eyes:before,
+#spooky #body #eyes:after {
+    content: ' ';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: rgb(60,60,60);
+    border-radius: 50%;
+}
+
+#spooky #body #mouth {
+    background: rgb(60,60,60);
+    margin: 25px auto 0;
+    width: 60px;
+    height: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#spooky #body #mouth:before {
+    content: ' ';
+    display: block;
+    background: #ffffff;
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+}
+
+#spooky #body #feet {
+    position: absolute;
+    display: flex;
+    bottom: -18px;
+    width: 180px;
+    height: 36px;
+}
+
+#spooky #body #feet > *,
+#spooky #body #feet::before,
+#spooky #body #feet::after {
+    content: ' ';
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+    box-shadow: 0 0px 20px white;
+    border-radius: 50%;
+}
+
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoomy {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+}
+
+.halloween {
+    text-shadow: 0 0px 15px orange;
+    font-size: 75px;
+    font-family: 'Nosifer', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pumpkin {
+    height: 11em;
+    width: 15em;
+    background: #f68632;
+    border: 0.4em solid #a14907;
+    border-radius: 70%/110%;
+    position: relative;
+    box-shadow: inset 0 0px 20px #a14907, 0 0 30px -4px red;
+    z-index: 1;
+    animation: float 1s infinite;
+}
+
+.pumpkin .texture {
+    height: 10.8em;
+    width: 6.5em;
+    position: absolute;
+    bottom: -0.4em;
+    left: 4em;
+    border-radius: 70%/130%;
+    border-bottom: 0.5em solid #a14907;
+    border-top: 0.5em solid #a14907;
+  }
+
+  .pumpkin .texture:after {
+    content: "";
+    display: block;
+    height: 10.7em;
+    width: 12em;
+    position: absolute;
+    bottom: -0.4em;
+    left: -2.5em;
+    border-radius: 70%/130%;
+    border-bottom: 0.5em solid #a14907;
+    border-top: 0.5em solid #a14907;
+  }
+
+  .pumpkin .root {
+    background: #517f54;
+    height: 2.8em;
+    width: 1.25em;
+    position: absolute;
+    left: calc(7.5em - 0.625em);
+    top: -2.7em;
+    transform: rotate(5deg);
+    border-radius: 30% 20% 70% 10%;
+    z-index: -1;
+    box-shadow: inset 0 0px 10px #29412b;
+  }
+
+  .pumpkin .eye {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.8em solid transparent;
+    top: 2.8em;
+  }
+
+  .pumpkin .eye.right {
+    right: 3.7em;
+    transform: rotate(30deg);
+    border-bottom: 2.1em solid transparent;
+    border-left: 2.4em solid #401d03;
+  }
+
+  .pumpkin .eye.left {
+    left: 3.7em;
+    transform: rotate(-30deg);
+    border-bottom: 2.1em solid transparent;
+    border-right: 2.4em solid #401d03;
+  }
+
+  .pumpkin .mouth {
+    width: 4em;
+    height: 2em;
+    position: absolute;
+    bottom: 1.5em;
+    border-bottom: 1em solid #401d03;
+  }
+
+  .pumpkin .mouth.right {
+    right: 3.6em;
+    border-radius: 0 0 100% 0;
+  }
+
+  .pumpkin .mouth.left {
+    left: 3.6em;
+    border-radius: 0 0 0 100%;
+  }
+  .pumpkin .teeth {
+    width: 0.5em;
+    height: 1em;
+    position: absolute;
+    top: 7.7em;
+    left: 7.25em;
+    border-top: 0.8em solid transparent;
+    border-bottom: 0em solid transparent;
+    border-left: 0.8em solid #401d03;
+  }
+
+  .pumpkin .teeth:before, .pumpkin .teeth:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.8em solid transparent;
+  }
+
+  .pumpkin .teeth:before {
+    right: 2.2em;
+    top: -0.65em;
+    transform: rotate(30deg);
+    border-bottom: 0.5em solid transparent;
+    border-left: 1em solid #401d03;
+  }
+
+  .pumpkin .teeth:after {
+    left: 1em;
+    top: -0.85em;
+    transform: rotate(30deg);
+    border-bottom: 0.5em solid transparent;
+    border-left: 1em solid #401d03;
+  }
+
+ .shadow {
+    margin: 10% auto 0;
+    background: #000000;
+    width: 230px;
+    height: 50px;
+    border-radius: 50%;
+    animation: zoom 1s infinite;
+  }
+
+  .halloween {
+    text-shadow: 0 0px 15px rgb(255, 166, 0);
+    font-size: 50px;
+    font-family: 'Nosifer', sans-serif;
+  }
+
+  @keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10%);
+    }
+  }
+
+  @keyframes zoom {
+      0%, 100% {
+          transform: scale(1);
+      }
+
+      50% {
+          transform: scale(0.8);
+      }
+  }

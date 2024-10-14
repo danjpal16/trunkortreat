@@ -7,4 +7,18 @@ $(document).ready(function() {
         $(this).find('.title-text').slideUp();
       }
     );
+
+    $('.moreinfo-btn').on('click', () => {
+      $('.moreinfo-text').toggle();
+    });
+
+    $('.trunk-card').hover(
+      function() {
+        $(this).find('.section-2').slideDown();
+      },
+      function() {
+        $(this).find('.section-2').slideUp();
+      }
+    );
+
   });
