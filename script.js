@@ -21,4 +21,16 @@ $(document).ready(function() {
       }
     );
 
+    $('.last-btn1').on('click', () => {
+      $('.last-text1').slideToggle();
+    });
+
+    $('.last-btn2').on('click', () => {
+      $('.last-text2').slideToggle();
+    });
+
+    $('.last-btn3').on('click', () => {
+      $('.last-text3').slideToggle();
+    });
+
   });

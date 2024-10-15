@@ -69,6 +69,50 @@ body {
     font-style: normal;
 }
 
+.last-btn1 {
+    background-color: #FFB28B;
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.last-btn2 {
+    background-color: #FFB28B;
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.last-btn3 {
+    background-color: #FFB28B;
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.last-header {
+    border-radius: 20px;
+    border-color: white;
+    border-width: medium;
+    box-shadow: #FFB28B;
+    box-shadow: 0 0 30px #FFB28B;
+}
+
+.last-text1 {
+    font-weight: 700;
+}
+
+.last-text2 {
+    font-weight: 700;
+}
+
+.last-text3 {
+    font-weight: 700;
+}
+
 .moreinfo-header {
     border-radius: 20px;
     border-color: white;
